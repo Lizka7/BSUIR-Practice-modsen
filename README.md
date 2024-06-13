@@ -1,4 +1,4 @@
-# BSUIR-practise
+# BSUIR-practice
 ## Navigation
 ### [JS](https://github.com/Lizka7/BSUIR-practice/tree/main/JS)
 * [Use strict](https://github.com/Lizka7/BSUIR-practice/blob/main/JS/use_strict_1.js)
@@ -6,4 +6,5 @@
 ### [Test task](https://github.com/Lizka7/BSUIR-practice/tree/main/Test%20tack)
 * [Documentation](https://github.com/Lizka7/BSUIR-practice/tree/main/Test%20tack/Documentation)
 * [Mockups](https://github.com/Lizka7/BSUIR-practice/tree/main/Test%20tack/Mockups)
+* [Code](https://github.com/Lizka7/BSUIR-practice/tree/main/Test%20tack/Code)
 

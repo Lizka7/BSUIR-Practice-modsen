@@ -97,7 +97,6 @@ label {
     color: #3498db; 
   }
   
-  /* Ключевые кадры для анимации вращения */
   @keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -113,15 +112,12 @@ label {
   }
   
 
-
-/* Для мобильных устройств */
 @media (max-width: 767px) {
     .header {
         font-size: 16px;
     }
 }
 
-/* Для планшетов и больших экранов */
 @media (min-width: 768px) {
     .header {
         font-size: 24px;

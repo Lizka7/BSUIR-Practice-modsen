@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -12,103 +11,129 @@
   <script src="https://kit.fontawesome.com/047a896e47.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="images/favicon2.png">
   <link rel="stylesheet" href="project/style.css">
-  </head>
-  
-  <body>
+</head>
+<body>
 
-<!--START-SETTINGS-->
-    <div class="container">
+<!-- START PAGE -->
+<div class="container-settings">
+  <div class="start-page">
+    <h1 class="heading">Super Quiz</h1>
+    <button class="btn begin">Begin</button>
+  </div>
+</div>
 
-      <div class="start-screen">
+<!-- INSTRUCTIONS -->
+<dialog class="instructions">
+  <div class="popup-content">
+    <h2 class="instruction-heading">Instructions</h2>
+    <p class="instruction-text">Welcome to Super Quiz! Please read the instructions carefully.</p>
+    <ol class="instruction-list">
+      <li>Before you start, select the number of questions, category, difficulty and time.</li>
+      <li>You will be asked to answer a certain number of questions within a certain time.</li>
+      <li>There will be one answer option for each question. Choose the one that you think is right.</li>
+      <li>If you don't know the answer, you can skip to the next question, but you can't go back to the previous questions.</li>
+      <li>Try to answer as quickly and accurately as possible to score more points.</li>
+      <li>After selecting the answer, you will immediately see if you answered correctly.</li>
+      <li>As soon as you pass the test, your result will be displayed.</li>
+      <li>Have fun and good luck to you!</li>
+    </ol>
+    <div class="instruction-buttons">
+      <button class="btn exit">Exit</button>
+      <button class="btn continue">Continue</button>
+    </div>
+  </div>
+</dialog>
 
-       <h1 class="heading">Super Quiz</h1>
+<!-- SETTINGS -->
+<div class="container hide">
 
-        <div class="settings">
-          <label for="num-questions">Number of Questions:</label>
-          <select id="num-questions">
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-          </select>
+  <div class="start-screen">
+    <h1 class="heading">Super Quiz</h1>
+    <div class="settings">
+      <label for="num-questions">Number of Questions:</label>
+      <select id="num-questions">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+      </select>
 
-          <label for="category">Select Category:</label>
-          <select id="category">
-            <option value="">any category</option>
-            <option value="9">general knowledge</option>
-            <option value="10">books</option>
-            <option value="11">films</option>
-            <option value="12">music</option>
-            <option value="18">computers</option>
-          </select>
+      <label for="category">Select Category:</label>
+      <select id="category">
+        <option value="">any category</option>
+        <option value="9">general knowledge</option>
+        <option value="10">books</option>
+        <option value="11">films</option>
+        <option value="12">music</option>
+        <option value="18">computers</option>
+      </select>
 
-          <label for="difficulty">Select difficulty:</label>
-          <select id="difficulty">
-            <option value="">any difficulty</option>
-            <option value="easy">easy</option>
-            <option value="medium">medium</option>
-            <option value="hard">hard</option>
-          </select>
+      <label for="difficulty">Select difficulty:</label>
+      <select id="difficulty">
+        <option value="">any difficulty</option>
+        <option value="easy">easy</option>
+        <option value="medium">medium</option>
+        <option value="hard">hard</option>
+      </select>
 
-          <label for="time">Select time per question:</label>
-          <select id="time">
-            <option value="10">10 seconds</option>
-            <option value="15">15 seconds</option>
-            <option value="20">20 seconds</option>
-          </select>
-        </div>
-            <button class="btn start">Start</button>
-      </div>
+      <label for="time">Select time per question:</label>
+      <select id="time">
+        <option value="10">10 seconds</option>
+        <option value="15">15 seconds</option>
+        <option value="20">20 seconds</option>
+      </select>
+    </div>
+    <button class="btn start">Start</button>
+  </div>
 
-<!-- QUIZ BOX -->
-      <div class="quiz hide">
-        <div class="timer">
-          <div class="progress">
-            <div class="progress-bar"></div>
-            <span class="progress-text"></span>
-          </div>
-        </div>
-        <div class="question-wrapper">
-          <div class="number">
-            Question <span class="current">1</span>
-            <span class="total">/10</span>
-          </div>
-          <div class="question">This is a question This is a question?</div>
-        </div>
-        <div class="answer-wrapper">
-          <div class="answer selected">
-            <span class="text">answer</span>
-            <span class="checkbox">
-              <i class="fas fa-check"></i>
-            </span>
-          </div>
-        </div>
-        <button class="btn submit" disabled>Submit</button>
-        <button class="btn next">Next</button>
-      </div>
-
-<!-- END -->
-      <div class="end-screen hide">
-        <h1 class="heading">Super Quiz</h1>
-        <div class="score">
-          <span class="score-text">Your score:</span>
-          <div>
-            <span class="final-score">0</span>
-            <span class="total-score">/10</span>
-          </div>
-        </div>
-        <button class="btn restart">Restart</button>
+  <!-- QUIZ BOX -->
+  <div class="quiz hide">
+    <div class="timer">
+      <div class="progress">
+        <div class="progress-bar"></div>
+        <span class="progress-text"></span>
       </div>
     </div>
-    
+    <div class="question-wrapper">
+      <div class="number">
+        Question <span class="current">1</span>
+        <span class="total">/10</span>
+      </div>
+      <div class="question">This is a question This is a question?</div>
+    </div>
+    <div class="answer-wrapper">
+      <div class="answer selected">
+        <span class="text">answer</span>
+        <span class="checkbox">
+          <i class="fas fa-check"></i>
+        </span>
+      </div>
+    </div>
+    <button class="btn submit" disabled>Submit</button>
+    <button class="btn next">Next</button>
+  </div>
+
+  <!-- END -->
+  <div class="end-screen hide">
+    <h1 class="heading">Super Quiz</h1>
+    <div class="score">
+      <span class="score-text">Your score:</span>
+      <div>
+        <span class="final-score">0</span>
+        <span class="total-score">/10</span>
+      </div>
+    </div>
+    <button class="btn restart">Restart</button>
+  </div>
+</div>
+
 <!-- CANVAS FOR CONFETTI -->
 <canvas id="canvas" class="hide"></canvas>
 
 <!-- PRELOADER -->
-
-  <div class="preload" data-preload>
-    <div class="circle"></div>
-    <p class="text">Super Quiz</p>
-  </div>
+<div class="preload" data-preload>
+  <div class="circle"></div>
+  <p class="text">Super Quiz</p>
+</div>
 
 <!-- AUDIO -->
 <audio id="countdownAudio">
@@ -117,7 +142,7 @@
 </audio>
 
 <!-- SCRIPT -->
-    <script src="project/script.js"></script>
-   
-  </body>
+<script src="project/script.js"></script>
+
+</body>
 </html>

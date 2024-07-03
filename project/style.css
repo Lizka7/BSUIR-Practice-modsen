@@ -30,6 +30,19 @@ body {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 4px rgba(255, 255, 255, 0.2);
 }
 
+.container-settings{
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(246, 246, 246, 0.289);
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
 .heading {
   text-align: center;
   font-size: 40px;
@@ -342,6 +355,7 @@ select {
     }
 }
 
+/*CONFETTI*/
 canvas {
   position: fixed;
   top: 0;
@@ -351,4 +365,52 @@ canvas {
   z-index: 1000;
   pointer-events: none; 
 }
+
+/* DIALOG */
+.instructions {
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+/* dialog's content */
+.popup-content {
+  padding: 20px;
+}
+
+.instruction-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.instruction-text {
+  font-weight: bold;  
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.instruction-buttons {
+  margin-top: 30px; 
+  display: flex;
+  justify-content: center;
+}
+
+.instruction-buttons .btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.hide {
+  display: none;
+}
+
 

@@ -14,7 +14,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('images/background10.jpg') center/cover no-repeat; 
+  background: url('../project/background10.jpg') center/cover no-repeat; 
 }
 
 .container {

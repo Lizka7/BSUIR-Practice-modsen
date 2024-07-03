@@ -12,6 +12,6 @@
 * [Async/Await](https://github.com/Lizka7/BSUIR-practice/blob/main/JS/async_await_9.js)
 * [Event Loop](https://github.com/Lizka7/BSUIR-practice/blob/main/JS/event_loop_10.js)
 ### [Test task](https://github.com/Lizka7/BSUIR-practice/tree/preview)
-* [Code](https://github.com/Lizka7/BSUIR-practice/tree/previ
+* [Code](https://github.com/Lizka7/BSUIR-practice/tree/preview)
 * [Deployment](https://lizka7.github.io/BSUIR-practice/)
 

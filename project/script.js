@@ -15,14 +15,13 @@ const showConfetti = () => {
   const particles = [];
   const particleCount = 150;
 
-  // Генерируем случайные координаты и цвета для конфетти
   for (let i = 0; i < particleCount; i++) {
     particles.push({
-      x: Math.random() * W, // случайная координата по X
-      y: Math.random() * H - H, // начальная координата по Y, чтобы начать за пределами экрана
-      r: Math.random() * 10 + 5, // радиус частицы
-      d: Math.random() * particleCount, // случайное значение для изменения анимации
-      color: randomColor(), // случайный цвет
+      x: Math.random() * W, 
+      y: Math.random() * H - H, 
+      r: Math.random() * 10 + 5, 
+      d: Math.random() * particleCount, 
+      color: randomColor(), 
     });
   }
 
@@ -50,17 +49,14 @@ function draw() {
   context.clearRect(0, 0, W, H);
 
   particles.forEach((particle) => {
-    // Рисуем круглую частицу
     context.beginPath();
     context.fillStyle = particle.color;
     context.moveTo(particle.x, particle.y);
     context.arc(particle.x, particle.y, particle.r, 0, Math.PI * 2, true);
     context.fill();
 
-    // Плавное движение частицы вниз
-    particle.y += 3; // Уменьшите значение для более плавного движения
+    particle.y += 3; 
 
-    // Если частица вышла за пределы экрана, перемещаем её вверх и генерируем новые случайные значения
     if (particle.y > H) {
       particle.x = Math.random() * W;
       particle.y = -10;
@@ -269,10 +265,8 @@ const showScore = () => {
   finalScore.innerHTML = score;
   totalScore.innerHTML = `/ ${questions.length}`;
 
-  // Показываем анимацию конфетти
   showConfetti();
 
-  // Удаляем класс hide с canvas, чтобы он стал видимым
   const canvas = document.getElementById("canvas");
   canvas.classList.remove("hide");
 };

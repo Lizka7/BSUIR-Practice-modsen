@@ -11,7 +11,7 @@
   <title>Super Quiz</title>
   <script src="https://kit.fontawesome.com/047a896e47.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="images/favicon2.png">
-  <link rel="stylesheet" href="C:/Users/Елизавета/Desktop/Task/style.css">
+  <link rel="stylesheet" href="project/style.css">
   </head>
   
   <body>
@@ -100,6 +100,8 @@
       </div>
     </div>
     
+<!-- CANVAS FOR CONFETTI -->
+<canvas id="canvas" class="hide"></canvas>
 
 <!-- PRELOADER -->
 
@@ -108,8 +110,14 @@
     <p class="text">Super Quiz</p>
   </div>
 
-<!-- SCRIPT -->
-    <script src="./script.js"></script>
+<!-- AUDIO -->
+<audio id="countdownAudio">
+  <source src="project/countdown.mp3" type="audio/mpeg" />
+  Ваш браузер не поддерживает элемент <code>audio</code>.
+</audio>
 
+<!-- SCRIPT -->
+    <script src="project/script.js"></script>
+   
   </body>
 </html>

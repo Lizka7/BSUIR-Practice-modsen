@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Super Quiz - this is an exciting quiz with questions on various topics. Choose the number of questions, category, difficulty level, and start the game!">
+  <meta name="keywords" content="quiz, questions, game, knowledge, categories, difficulties">
+  <meta name="author" content="Liza Sejko">
+  <title>Super Quiz</title>
+  <script src="https://kit.fontawesome.com/047a896e47.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="./images/favicon2.png">
+  <link rel="stylesheet" href="project/style.css">
+  </head>
+  
+  <body>
+
+<!--START-SETTINGS-->
+    <div class="container">
+
+      <div class="start-screen">
+
+       <h1 class="heading">Super Quiz</h1>
+
+        <div class="settings">
+          <label for="num-questions">Number of Questions:</label>
+          <select id="num-questions">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+          </select>
+
+          <label for="category">Select Category:</label>
+          <select id="category">
+            <option value="">any category</option>
+            <option value="9">general knowledge</option>
+            <option value="10">books</option>
+            <option value="11">films</option>
+            <option value="12">music</option>
+            <option value="18">computers</option>
+          </select>
+
+          <label for="difficulty">Select difficulty:</label>
+          <select id="difficulty">
+            <option value="">any difficulty</option>
+            <option value="easy">easy</option>
+            <option value="medium">medium</option>
+            <option value="hard">hard</option>
+          </select>
+
+          <label for="time">Select time per question:</label>
+          <select id="time">
+            <option value="10">10 seconds</option>
+            <option value="15">15 seconds</option>
+            <option value="20">20 seconds</option>
+          </select>
+        </div>
+            <button class="btn start">Start</button>
+      </div>
+
+<!-- QUIZ BOX -->
+      <div class="quiz hide">
+        <div class="timer">
+          <div class="progress">
+            <div class="progress-bar"></div>
+            <span class="progress-text"></span>
+          </div>
+        </div>
+        <div class="question-wrapper">
+          <div class="number">
+            Question <span class="current">1</span>
+            <span class="total">/10</span>
+          </div>
+          <div class="question">This is a question This is a question?</div>
+        </div>
+        <div class="answer-wrapper">
+          <div class="answer selected">
+            <span class="text">answer</span>
+            <span class="checkbox">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+        </div>
+        <button class="btn submit" disabled>Submit</button>
+        <button class="btn next">Next</button>
+      </div>
+
+<!-- END -->
+      <div class="end-screen hide">
+        <h1 class="heading">Super Quiz</h1>
+        <div class="score">
+          <span class="score-text">Your score:</span>
+          <div>
+            <span class="final-score">0</span>
+            <span class="total-score">/10</span>
+          </div>
+        </div>
+        <button class="btn restart">Restart</button>
+      </div>
+    </div>
+    
+
+<!-- PRELOADER -->
+
+  <div class="preload" data-preload>
+    <div class="circle"></div>
+    <p class="text">Super Quiz</p>
+  </div>
+
+<!-- SCRIPT -->
+    <script src="project/script.js"></script>
+
+  </body>
+</html>

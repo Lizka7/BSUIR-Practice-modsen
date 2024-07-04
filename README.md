@@ -18,4 +18,5 @@
 * [Description](https://github.com/Lizka7/BSUIR-practice/blob/main/HTTP/Description.md)
 * [Postman](https://github.com/Lizka7/BSUIR-practice/tree/main/HTTP/POSTMAN)
 * [Express](https://github.com/Lizka7/BSUIR-practice/tree/main/HTTP/EXPRESS)
+### [GIT](https://github.com/Lizka7/BSUIR-practice/tree/main/GIT)
 
